@@ -43,9 +43,10 @@ pip install --upgrade pip
 
 # Install poetry
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
-echo 'export PATH="/root/.local/bin:$PATH"' >> ~/.zshrc
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 
 # Add plugins
+sed -i '/^plugins=.*/i ZSH_PYENV_QUIET="true"' ~/.zshrc
 sed -i 's/\(^plugins=([^)]*\)/\1 pyenv python pip/' ~/.zshrc
 source ~/.zshrc
