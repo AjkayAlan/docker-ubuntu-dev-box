@@ -59,11 +59,10 @@ test_goenv_isInstalled() {
   assertContains "${result}" "Usage: goenv <command>"
 }
 
-# TODO: Fix. Escaping variable assignment
-# test_go_isInstalled() {
-#   result=`go --help`
-#   assertContains "${result}" "go <command>"
-# }
+test_go_isInstalled() {
+  result=`go help`
+  assertContains "${result}" "go <command>"
+}
 
 test_sdk_isInstalled() {
   result=`sdk --help`
@@ -90,11 +89,10 @@ test_kotlin_isInstalled() {
   assertContains "${result}" "Usage: kotlin <options>"
 }
 
-# TODO: Fix. Escaping variable assignment
-# test_scala_isInstalled() {
-#   result=`scala --help`
-#   assertContains "${result}" "Usage: scala"
-# }
+test_scala_isInstalled() {
+  result=`scala --version`
+  assertContains "${result}" "Scala code runner version"
+}
 
 test_dotnet_isInstalled() {
   result=`dotnet --help`
