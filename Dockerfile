@@ -22,6 +22,7 @@ RUN /tmp/scripts/fix-locales.sh && \
     /tmp/scripts/install-netcore.sh && \
     /tmp/scripts/install-powershell-core.sh && \
     /tmp/scripts/install-tfenv-terraform.sh && \
+    /tmp/scripts/install-rustup-rust.sh && \
     /tmp/scripts/install-awscli.sh && \
     rm -rf /var/lib/apt/lists/*
 
