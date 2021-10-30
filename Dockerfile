@@ -16,7 +16,7 @@ RUN /tmp/scripts/fix-locales.sh && \
     /tmp/scripts/install-zsh.sh && \
     /tmp/scripts/install-nvm-node.sh && \
     /tmp/scripts/install-pyenv-python.sh && \
-    /tmp/scripts/install-rbenv-ruby.sh && \
+    /tmp/scripts/install-rvm-ruby.sh && \
     /tmp/scripts/install-goenv-go.sh && \
     /tmp/scripts/install-sdkman-java.sh && \
     /tmp/scripts/install-netcore.sh && \
@@ -24,6 +24,7 @@ RUN /tmp/scripts/fix-locales.sh && \
     /tmp/scripts/install-tfenv-terraform.sh && \
     /tmp/scripts/install-rustup-rust.sh && \
     /tmp/scripts/install-rlang.sh && \
+    /tmp/scripts/install-dart.sh && \
     /tmp/scripts/install-awscli.sh && \
     rm -rf /var/lib/apt/lists/*
 

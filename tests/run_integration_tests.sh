@@ -44,14 +44,19 @@ test_poetry_isInstalled() {
   assertContains "${result}" "Poetry version"
 }
 
-test_rbenv_isInstalled() {
-  result=`rbenv --help`
-  assertContains "${result}" "Usage: rbenv <command>"
+test_rvm_isInstalled() {
+  result=`rvm --help`
+  assertContains "${result}" "rvm [--debug]"
 }
 
 test_ruby_isInstalled() {
   result=`ruby --help`
   assertContains "${result}" "Usage: ruby"
+}
+
+test_rails_isInstalled() {
+  result=`ruby --help`
+  assertContains "${result}" "rails new"
 }
 
 test_goenv_isInstalled() {
@@ -133,6 +138,11 @@ test_cargo_isInstalled() {
 test_R_isInstalled() {
   result=`R --help`
   assertContains "${result}" "Usage: R [options]"
+}
+
+test_dart_isInstalled() {
+  result=`dart --help`
+  assertContains "${result}" "Usage: dart <command"
 }
 
 test_awscli_isInstalled() {
