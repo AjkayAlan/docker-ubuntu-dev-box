@@ -55,7 +55,7 @@ test_ruby_isInstalled() {
 }
 
 test_rails_isInstalled() {
-  result=`ruby --help`
+  result=`rails --help`
   assertContains "${result}" "rails new"
 }
 
