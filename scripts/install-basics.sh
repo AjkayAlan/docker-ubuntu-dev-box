@@ -9,6 +9,7 @@ DEBIAN_FRONTEND=noninteractive apt install -y \
     curl \
     fontconfig \
     gzip \
+    jq \
     lsb-release \
     man-db \
     nano \

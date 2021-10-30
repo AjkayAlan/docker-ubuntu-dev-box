@@ -15,3 +15,7 @@ apt install -y dotnet-sdk-$lts_version
 
 # Cleanup
 rm packages-microsoft-prod.deb
+
+# Add plugins
+sed -i 's/\(^plugins=([^)]*\)/\1 dotnet/' ~/.zshrc
+source ~/.zshrc

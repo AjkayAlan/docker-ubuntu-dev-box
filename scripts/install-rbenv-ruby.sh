@@ -15,3 +15,7 @@ git clone https://github.com/rbenv/ruby-build.git "$(rbenv root)"/plugins/ruby-b
 # Install latest stable ruby
 rbenv install $(rbenv install -l | grep -v - | tail -1)
 rbenv global $(rbenv install -l | grep -v - | tail -1)
+
+# Add plugins
+sed -i 's/\(^plugins=([^)]*\)/\1 rbenv ruby/' ~/.zshrc
+source ~/.zshrc

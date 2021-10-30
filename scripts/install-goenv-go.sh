@@ -14,3 +14,7 @@ source ~/.zshrc
 # Install latest go
 goenv install $(goenv install -l | grep -v - | tail -1)
 goenv global $(goenv install -l | grep -v - | tail -1)
+
+# Add plugins
+sed -i 's/\(^plugins=([^)]*\)/\1 golang/' ~/.zshrc
+source ~/.zshrc
