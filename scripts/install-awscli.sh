@@ -7,3 +7,4 @@ unzip awscliv2.zip
 
 # Cleanup
 rm awscliv2.zip
+rm -rf aws

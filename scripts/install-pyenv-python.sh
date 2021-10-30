@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Install dependencies for pyenv
-apt install -y \
+DEBIAN_FRONTEND=noninteractive apt install -y \
     make \
     build-essential \
     libssl-dev \
@@ -12,20 +12,20 @@ apt install -y \
     wget \
     curl \
     llvm \
-    libncurses5-dev \
     libncursesw5-dev \
     xz-utils \
     tk-dev \
+    libxml2-dev \
+    libxmlsec1-dev \
     libffi-dev \
-    liblzma-dev \
-    python-openssl \
-    git
+    liblzma-dev
 
 # Install pyenv
 curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | zsh
 
 # Initialize pyenv in shell
-echo 'export PATH="$HOME/.pyenv/bin:$PATH"' >> ~/.zshrc
+echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.zshrc
+echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.zshrc
 echo 'eval "$(pyenv init --path)"' >> ~/.zshrc
 echo 'eval "$(pyenv init -)"' >> ~/.zshrc
 echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.zshrc
@@ -40,3 +40,8 @@ pyenv latest global
 
 # Upgrade pip
 pip install --upgrade pip
+
+# Install poetry
+curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
+echo 'export PATH="/root/.local/bin:$PATH"' >> ~/.zshrc
+source ~/.zshrc

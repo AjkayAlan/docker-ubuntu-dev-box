@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install zsh
-apt install -y zsh
+DEBIAN_FRONTEND=noninteractive apt install -y zsh
 
 # Install Oh-My-Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install basic nice to have things
-apt install -y \
+DEBIAN_FRONTEND=noninteractive apt install -y \
     apt-transport-https \
     bzip2 \
     ca-certificates \
