@@ -14,8 +14,6 @@ DEBIAN_FRONTEND=noninteractive apt install -y \
     man-db \
     nano \
     patch \
-    python-apt \
-    python-pycurl \
     sed \
     snapd \
     software-properties-common \
