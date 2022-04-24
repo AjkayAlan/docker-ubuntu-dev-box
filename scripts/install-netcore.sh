@@ -5,7 +5,7 @@ lts_version=$(curl https://dotnetcli.blob.core.windows.net/dotnet/Sdk/LTS/latest
 lts_version=${lts_version%.*}
 
 # Install .NET Core and make it available
-wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
+wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
 dpkg -i packages-microsoft-prod.deb
 
 apt update; \
