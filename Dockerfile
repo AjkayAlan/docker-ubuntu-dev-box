@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:22.04
 
 # Add scripts to image to provision and grant execute
 ADD scripts /tmp/scripts
