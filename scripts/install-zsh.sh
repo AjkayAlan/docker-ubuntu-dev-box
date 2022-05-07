@@ -28,7 +28,7 @@ fi
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 # sed -i 's/\(^plugins=([^)]*\)/\1 zsh-autosuggestions zsh-syntax-highlighting gh/' ~/.zshrc
-sed -i 's/\(^plugins=([^)]*\)/\1 zsh-syntax-highlighting gh/' ~/.zshrc
+sed -i 's/\(^plugins=([^)]*\)/\1 zsh-syntax-highlighting/' ~/.zshrc
 source ~/.zshrc
 
 # Fix paste speed - see https://gist.github.com/magicdude4eva/2d4748f8ef3e6bf7b1591964c201c1ab
