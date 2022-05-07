@@ -10,5 +10,5 @@ tfenv install
 tfenv use
 
 # Add plugins
-sed -i 's/\(^plugins=([^)]*\)/\1 terraform/' ~/.zshrc
-source ~/.zshrc
+# sed -i 's/\(^plugins=([^)]*\)/\1 terraform/' ~/.zshrc
+# source ~/.zshrc
