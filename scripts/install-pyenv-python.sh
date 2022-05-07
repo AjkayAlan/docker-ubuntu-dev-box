@@ -47,6 +47,6 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 
 # Add plugins
-sed -i '/^plugins=.*/i ZSH_PYENV_QUIET="true"' ~/.zshrc
-sed -i 's/\(^plugins=([^)]*\)/\1 pyenv python pip/' ~/.zshrc
-source ~/.zshrc
+# sed -i '/^plugins=.*/i ZSH_PYENV_QUIET="true"' ~/.zshrc
+# sed -i 's/\(^plugins=([^)]*\)/\1 pyenv python pip/' ~/.zshrc
+# source ~/.zshrc

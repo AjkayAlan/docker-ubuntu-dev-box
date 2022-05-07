@@ -20,5 +20,5 @@ sdk install kotlin
 sdk install scala
 
 # Add plugins
-sed -i 's/\(^plugins=([^)]*\)/\1 sdk gradle mvn/' ~/.zshrc
-source ~/.zshrc
+# sed -i 's/\(^plugins=([^)]*\)/\1 sdk gradle mvn/' ~/.zshrc
+# source ~/.zshrc

@@ -6,7 +6,7 @@ RUN chmod -R ugo+rwx /tmp/scripts
 
 # Fix locales
 RUN /tmp/scripts/fix-locales.sh
-ENV LANG en_US.UTF-8 
+ENV LANG en_US.UTF-8
 
 # Install everything
 RUN /tmp/scripts/fix-locales.sh && \
@@ -16,11 +16,11 @@ RUN /tmp/scripts/fix-locales.sh && \
     /tmp/scripts/install-zsh.sh && \
     /tmp/scripts/install-nvm-node.sh && \
     /tmp/scripts/install-pyenv-python.sh && \
-    /tmp/scripts/install-rvm-ruby.sh && \
+    /tmp/scripts/install-rbenv-ruby.sh && \
     /tmp/scripts/install-goenv-go.sh && \
     /tmp/scripts/install-sdkman-java.sh && \
     /tmp/scripts/install-netcore.sh && \
-    /tmp/scripts/install-powershell-core.sh && \
+    # /tmp/scripts/install-powershell-core.sh && \
     /tmp/scripts/install-tfenv-terraform.sh && \
     /tmp/scripts/install-rustup-rust.sh && \
     /tmp/scripts/install-dart.sh && \

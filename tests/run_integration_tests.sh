@@ -105,10 +105,10 @@ test_dotnet_isInstalled() {
   assertContains "${result}" "Usage: dotnet [runtime-options]"
 }
 
-test_pwsh_isInstalled() {
-  result=`pwsh --help`
-  assertContains "${result}" "Usage: pwsh"
-}
+# test_pwsh_isInstalled() {
+#   result=`pwsh --help`
+#   assertContains "${result}" "Usage: pwsh"
+# }
 
 test_tfenv_isInstalled() {
   result=`tfenv --help`

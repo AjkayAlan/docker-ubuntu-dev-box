@@ -15,5 +15,5 @@ npm install -g npm
 npm install -g yarn
 
 # Add plugins
-sed -i 's/\(^plugins=([^)]*\)/\1 nvm npm yarn/' ~/.zshrc
-source ~/.zshrc
+# sed -i 's/\(^plugins=([^)]*\)/\1 nvm npm yarn/' ~/.zshrc
+# source ~/.zshrc
