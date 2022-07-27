@@ -44,9 +44,9 @@ test_poetry_isInstalled() {
   assertContains "${result}" "Poetry version"
 }
 
-test_rvm_isInstalled() {
-  result=`rvm --help`
-  assertContains "${result}" "rvm [--debug]"
+test_rbenv_isInstalled() {
+  result=`rbenv --help`
+  assertContains "${result}" "Usage: rbenv <command>"
 }
 
 test_ruby_isInstalled() {
@@ -105,10 +105,10 @@ test_dotnet_isInstalled() {
   assertContains "${result}" "Usage: dotnet [runtime-options]"
 }
 
-# test_pwsh_isInstalled() {
-#   result=`pwsh --help`
-#   assertContains "${result}" "Usage: pwsh"
-# }
+test_pwsh_isInstalled() {
+  result=`pwsh --help`
+  assertContains "${result}" "Usage: pwsh"
+}
 
 test_tfenv_isInstalled() {
   result=`tfenv --help`
