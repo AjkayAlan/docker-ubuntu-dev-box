@@ -3,7 +3,6 @@
 # Get LTS version
 lts_version=$(curl https://dotnetcli.blob.core.windows.net/dotnet/Sdk/LTS/latest.version)
 lts_version=${lts_version%.*}
-lts_version=${lts_version%.*}
 
 # Get microsoft's feed
 wget https://packages.microsoft.com/config/ubuntu/22.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb
