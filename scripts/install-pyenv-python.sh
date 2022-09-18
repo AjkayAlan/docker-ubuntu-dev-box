@@ -42,7 +42,7 @@ pyenv latest global
 pip install --upgrade pip
 
 # Install poetry
-curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
+curl -sSL https://install.python-poetry.org | python3 -
 echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.zshrc
 source ~/.zshrc
 
