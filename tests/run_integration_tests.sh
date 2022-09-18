@@ -41,7 +41,7 @@ test_python_isInstalled() {
 
 test_poetry_isInstalled() {
   result=`poetry --help`
-  assertContains "${result}" "Poetry version"
+  assertContains "${result}" "Poetry (version"
 }
 
 test_rbenv_isInstalled() {
