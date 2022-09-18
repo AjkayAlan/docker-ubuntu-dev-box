@@ -40,7 +40,7 @@ test_python_isInstalled() {
 }
 
 test_poetry_isInstalled() {
-  result=`poetry --help`
+  result=`poetry --version`
   assertContains "${result}" "Poetry (version"
 }
 
